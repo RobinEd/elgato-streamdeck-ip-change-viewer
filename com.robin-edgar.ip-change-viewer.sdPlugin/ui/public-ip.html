@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Public IP Monitor</title>
+
+    <script src="sdpi-components.js"></script>
+</head>
+
+<body>
+
+    <sdpi-item label="Refresh interval">
+        <sdpi-textfield
+            setting="refreshInterval"
+            placeholder="default 5 mins, min 10 secs, max 24 hours"
+            type="number"
+            min="10"
+            max="86400"
+            value="5">
+        </sdpi-textfield>
+    </sdpi-item>
+
+    <sdpi-item label="Unit">
+        <sdpi-select setting="refreshUnit" default="minutes">
+            <option value="seconds">Seconds</option>
+            <option value="minutes">Minutes</option>
+            <option value="hours">Hours</option>
+        </sdpi-select>
+    </sdpi-item>
+
+</body>
+</html>

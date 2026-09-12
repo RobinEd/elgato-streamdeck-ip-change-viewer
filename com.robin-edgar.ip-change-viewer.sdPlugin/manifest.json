@@ -1,0 +1,52 @@
+{
+	"Name": "IP Change Viewer",
+	"Version": "0.1.0.0",
+	"Author": "Robin Edgar",
+	"$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+	"Actions": [
+		{
+			"Name": "Public IP Monitor",
+			"UUID": "com.robin-edgar.ip-change-viewer.public-ip-monitor",
+			"Icon": "imgs/normal",
+			"Tooltip": "Displays the public IP address and reports changes.",
+			"PropertyInspectorPath": "ui/public-ip.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/normal",
+					"TitleAlignment": "middle"
+				},
+				{
+					"Image": "imgs/warning",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "IP Change Viewer",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Views and reports if your external IP changes. Press the button to reset the state. Logs are found in the plugin directory.",
+	"Icon": "imgs/plugin",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "24",
+		"Debug": "enabled"
+	},
+	"UUID": "com.robin-edgar.ip-change-viewer"
+}
