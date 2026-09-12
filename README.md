@@ -1,2 +1,2 @@
 # elgato-streamdeck-ip-change-viewer
-Have the streamdeck display a warning when your external IP address changes
+The Stream Deck will display your IP address over blue clouds when initiated. Should your external IP change, it will display red clouds over the new IP address until you press the button. IP address changes are logged in the plugin/logs directory.
